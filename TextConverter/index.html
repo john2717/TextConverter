@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="functions.js"></script>
+    <title>TextConverter</title>
+</head>
+	
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <input type="radio" id="converterTag" value="converterTag" name="options" checked onclick="convertTag();">
+				<label>Converter Tags</label>
+				<input type="radio" id="strongTxt" value="text-bold" name="options" onclick="strongMaker();">
+				<label>Deixar em negrito</label>
+				<button id="run" onclick="convertTag()">Run</button>
+				<button id="clear" onclick="clearScreen()">Clear</button>
+            </div>
+        </nav>
+    </header>
+	
+    <section class="body-page">
+        <div class="col col1">
+            <textarea id="origin"></textarea>
+        </div>
+        <div class="col col2">
+            <textarea id="result"></textarea>
+        </div>
+    </section>
+	
+   <footer>
+		<p class="footer-bar">Desenvolvido por Jonathan Motta<span>&copy;</span></p>
+   </footer>
+
+
+</body>
+</html>
